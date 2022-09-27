@@ -21,7 +21,10 @@ I added a combiner as well for this task, as taking the sum is an associative op
 
 Below is the bar plot for the aggregate transactions for each month in each year.
 
-![](RackMultipart20220927-1-tjolj3_html_de937e814f9abee7.png)
+<p>&nbsp;</p>
+<kbd>
+<img src="https://user-images.githubusercontent.com/14356479/192405248-a06d9f0c-425d-4461-a4e9-b5b1bb8594a3.jpg"  width="1000" ></kbd>
+<p>&nbsp;</p>
 
 According to this plot, I can see that the total transactions have remained the same till February 2017 and afterwards increased quite rapidly to have the peak during January 2018. After the Peak , the amount has dropped down may be depicting the crypto currency bubble in 2018 before starting to hover again for the upcoming months.
 
@@ -39,7 +42,11 @@ Here also I introduced a combiner, although averaging is not directly associativ
 
 Below plot shows the average transactions for each month in each year.
 
-![](RackMultipart20220927-1-tjolj3_html_995c206fc4e69177.png)
+<p>&nbsp;</p>
+<kbd>
+<img src="https://user-images.githubusercontent.com/14356479/192405468-a41d63ef-c0e1-418e-bb4c-497b4dbd407e.jpg"  width="1000" ></kbd>
+<p>&nbsp;</p>
+
 
 The huge spike in average transaction value the August 2015 should be due to the lower amount of transactions as it was just after the introduction of Ethereum on 2015 July 30th. Then after that the transaction volume should have gone up exponential within a short period of time for the average transaction values to plummet. After the crypto bubble in 2018 since Ethereum got very popular, the transaction amount should have increased exponentially for the average transaction values to go down gradually.
 
@@ -172,7 +179,10 @@ I also have introduced a combiner here as this a summing operation to reduce the
 
 Here I can see that for Scamming type Active status has the highest value and for Phishing type Offline status has the highest value where for Fake ICO, I can only find Offline status.
 
-![](RackMultipart20220927-1-tjolj3_html_c11542dc175dbe59.png)
+<p>&nbsp;</p>
+<kbd>
+<img src="https://user-images.githubusercontent.com/14356479/192405718-0695f902-6697-4a88-ae50-3cf46862f014.jpg"  width="1000" ></kbd>
+<p>&nbsp;</p>
 
 ## 4.2Wash Trading
 
@@ -265,11 +275,19 @@ I also used a combiner here to get the intermediate total for gas prices and cou
 
 The following 2 plots are obtained from the data I yielded from the reducer.
 
-![Shape1](RackMultipart20220927-1-tjolj3_html_bc2f27cdfb50efb0.gif) ![](RackMultipart20220927-1-tjolj3_html_e168374236b0bd90.png)
+<p>&nbsp;</p>
+<kbd>
+<img src="https://user-images.githubusercontent.com/14356479/192405978-61d84165-8f75-45a3-9521-52324629703b.jpg"  width="1000" ></kbd>
+<p>&nbsp;</p>
+
 
 I can see that the total number of transactions have surged and increased gradually after 16th October 2017
 
-![Shape2](RackMultipart20220927-1-tjolj3_html_d5a5f21e4eac3b3f.gif) ![](RackMultipart20220927-1-tjolj3_html_247e4e813c8814cb.png)
+<p>&nbsp;</p>
+<kbd>
+<img src="https://user-images.githubusercontent.com/14356479/192406000-1b329791-cafb-4622-b1ef-041cc08d5089.jpg"  width="1000" ></kbd>
+<p>&nbsp;</p>
+
 
 And also, the average gas price has plummeted and decreased gradually after 16th October 2017 as the mining reward has been reduced to 3 ETH from 5.
 
@@ -322,7 +340,10 @@ In the reducer I have taken the average gas price for each unique (Year, Month) 
 
 I also implemented a combiner here to get the intermediate totals of the gas price and the counts to reduce the burden on reducer.
 
-![](RackMultipart20220927-1-tjolj3_html_d1e91fa3e5b2a6b2.png)
+<p>&nbsp;</p>
+<kbd>
+<img src="https://user-images.githubusercontent.com/14356479/192406148-6be9aea5-acc2-4838-a6f3-f62b65ae81e7.jpg"  width="1000" ></kbd>
+<p>&nbsp;</p>
 
 Here I can see at the very beginning the gas price is very high and suddenly within 1 month it has plummeted. This may be because as soon as Ethereum was introduced the price of Ethereum was considerably low, and within short time it surged drastically, so then you needed only a much small amount of Ethereum to transfer the same value compared to earlier.
 
@@ -344,9 +365,17 @@ Here I get the input of the previous job and calculate the average for each uniq
 
 Below is the plot obtained from the results.
 
-![](RackMultipart20220927-1-tjolj3_html_e329d7a67ae79d54.png)
+<p>&nbsp;</p>
+<kbd>
+<img src="https://user-images.githubusercontent.com/14356479/192406341-129710c4-9d19-4559-a8f7-35505b4316dd.jpg"  width="1000" ></kbd>
+<p>&nbsp;</p>
 
-![](RackMultipart20220927-1-tjolj3_html_163476a5b81c6d71.png)
+
+<p>&nbsp;</p>
+<kbd>
+<img src="https://user-images.githubusercontent.com/14356479/192406398-44d484db-a315-47fc-b865-51c784badc01.jpg"  width="1000" ></kbd>
+<p>&nbsp;</p>
+
 
 I can see in general the average gas used has increased over time. The average difficulty has also increased generally till 2018 August, but afterwards it has fluctuated.
 
@@ -364,11 +393,17 @@ In the reducer I perform a repartition join to filter out the specific blocks on
 
 Here I get the output of the previous job as the input and average the difficulty and gas price for each unique (Year, Month) with the help of a combiner as well.
 
-![](RackMultipart20220927-1-tjolj3_html_e7ff62b34a5f3fd2.png)
+<p>&nbsp;</p>
+<kbd>
+<img src="https://user-images.githubusercontent.com/14356479/192406577-15c16877-d3c3-401e-980a-07607bd919a4.jpg"  width="1000" ></kbd>
+<p>&nbsp;</p>
 
 The average gas price for the top 3 contract shows somewhat of a similar pattern for what I obtained in the 1st step of this question.
 
-![](RackMultipart20220927-1-tjolj3_html_33f41c46a5f1e2cd.png)
+<p>&nbsp;</p>
+<kbd>
+<img src="https://user-images.githubusercontent.com/14356479/192406626-904c8b82-1132-4ac7-b771-fff3b01db650.jpg"  width="1000" ></kbd>
+<p>&nbsp;</p>
 
 The average difficulty change over time clearly shows a similar pattern to the Average difficulty results I obtained in the part 2 of this question.
 
@@ -394,7 +429,11 @@ I ran this also 5 times.
 
 If we compare the two execution times, Spark average execution time is only around 15.87% of the Hadoop Map Reduce average execution time.
 
-![](RackMultipart20220927-1-tjolj3_html_5cf507ff9fd6b11f.png)
+<p>&nbsp;</p>
+<kbd>
+<img src="https://user-images.githubusercontent.com/14356479/192406703-b226afec-6fa0-4a70-81f8-dcce42641616.jpg"  width="1000" ></kbd>
+<p>&nbsp;</p>
+
 
 # 6References
 
